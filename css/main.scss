@@ -49,6 +49,12 @@ header{
                 border-radius: 10px;
                 margin-right: 10px;
                 margin-bottom: 10px;
+
+                &:hover{
+                    font-weight: 500;
+                    color: $white-color;
+                    background: linear-gradient(95.42deg, #000B27 -7.57%, #0E2664 111.36%);
+                }
             }
 
             .active{
