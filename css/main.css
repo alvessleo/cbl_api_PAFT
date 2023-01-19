@@ -1,1 +1,123 @@
-/*# sourceMappingURL=main.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Inter;
+}
+
+header {
+  background-color: #000B27;
+  display: flex;
+  flex-direction: column;
+}
+header img {
+  margin: auto;
+  padding: 1.5em 0;
+}
+header .sub-header {
+  background-color: #D9D9D9;
+  display: flex;
+  flex-direction: row;
+}
+
+.hero {
+  margin: 1em;
+}
+.hero .filter {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+.hero .filter p {
+  color: #969696;
+  margin-bottom: 0.5em;
+}
+.hero .filter .container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.hero .filter .container .category {
+  width: 120px;
+  min-width: 120px;
+  padding: 7px 0;
+  background-color: #D9D9D9;
+  text-align: center;
+  border-radius: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.hero .filter .container .active {
+  font-weight: 500;
+  color: #FFF;
+  background: linear-gradient(95.42deg, #000B27 -7.57%, #0E2664 111.36%);
+}
+.hero .container-news .main {
+  margin-bottom: 1em;
+}
+.hero .container-news .main h1 {
+  font-size: 1.9em;
+  margin-bottom: 0.6em;
+}
+.hero .container-news .main .image {
+  position: relative;
+}
+.hero .container-news .main .image img {
+  width: 100%;
+  max-width: 600px;
+}
+.hero .container-news .main .image .typo {
+  position: absolute;
+  bottom: 0;
+  transform: translate(20px, -25px);
+}
+.hero .container-news .main .image .typo .tag-novo {
+  background-color: red;
+  color: #FFF;
+  border-radius: 10px;
+  width: 40px;
+  font-size: 0.7em;
+  text-transform: uppercase;
+  text-align: center;
+}
+.hero .container-news .main .image .typo h2 {
+  color: #FFF;
+  font-weight: 400;
+  font-size: 1.2em;
+  margin-top: 0.4em;
+  max-width: 400px;
+}
+.hero .container-news .main .image .typo p {
+  color: #FFF;
+  padding-top: 0.7em;
+  font-size: 0.9em;
+}
+.hero .container-news .see-more h3 {
+  font-size: 1.3em;
+  margin-bottom: 0.6em;
+}
+.hero .container-news .see-more hr {
+  opacity: 20%;
+  margin: 1em 0;
+}
+.hero .container-news .see-more .news {
+  display: flex;
+}
+.hero .container-news .see-more .news img {
+  max-width: 280px;
+  width: 250px;
+  margin-right: 1em;
+}
+.hero .container-news .see-more .news .typo h3 {
+  color: #0E2664;
+  max-width: 200px;
+}
+.hero .container-news .see-more .news .typo .description {
+  font-size: 0.8em;
+  max-width: 200px;
+  margin-top: -0.5em;
+  margin-bottom: 2em;
+}
+.hero .container-news .see-more .news .typo p {
+  font-size: 0.6em;
+}
+.hero .container-news .see-more .news .typo .time {
+  color: #969696;
+}/*# sourceMappingURL=main.css.map */
