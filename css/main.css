@@ -116,10 +116,10 @@ header .sub-header {
   width: fit-content;
 }
 .hero .container-news .see-more .news img {
-  max-width: 280px;
-  width: 250px;
+  max-width: 100%;
+  width: 280px;
   margin-right: 1em;
-  max-height: 150px;
+  max-height: 200px;
 }
 .hero .container-news .see-more .news .typo h3 {
   color: #0E2664;

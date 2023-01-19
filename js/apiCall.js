@@ -7,6 +7,8 @@ function callNoticias(categoria){
         let noticias = document.querySelector(".see-more");
         let resposta = JSON.parse(this.response);
 
+        noticias.innerHTML = "<h3>Veja mais</h3>";
+
         resposta.data.forEach((element, index) => {
         let noticia = element;
         if (index == 0){
@@ -16,7 +18,7 @@ function callNoticias(categoria){
                     <div class="typo">
                         <div class="tag-novo">${resposta.category}</div>
                         <h2 id="nome-noticia">${noticia.title}</h2>
-                        <p>Publicado por <span id="nome-autor">${noticia.author}</span></p>
+                        <p>Published by <span id="nome-autor">${noticia.author}</span></p>
                     </div>
                 </div>
             `;
@@ -48,6 +50,5 @@ categoria.forEach(element => {
 });
 
 document.body.onload = function(e){
-    alert("chamou");
     callNoticias("all");
 };
