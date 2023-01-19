@@ -14,6 +14,7 @@ header{
     background-color: $primary-color;
     display: flex;
     flex-direction: column;
+    width: 100%;
     
     img{
         margin: auto;
@@ -25,6 +26,13 @@ header{
         display: flex;
         flex-direction: row;
     }
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero{
@@ -140,6 +148,31 @@ header{
 
                     .time{
                         color: #969696;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Responsividade
+@media only screen and (min-width: 1200px){
+    .hero{
+        
+        .container-news{
+            display: flex;
+            
+
+            .main{
+                margin-right: 1.5em;
+            }
+
+            .see-more{
+                margin-top: 1.1em;
+                
+                .news{
+                    img{
+                        height: 150px;
                     }
                 }
             }
