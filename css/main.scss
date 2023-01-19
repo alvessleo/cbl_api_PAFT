@@ -85,12 +85,14 @@ header{
                 .typo{
                     position: absolute;
                     bottom: 0;
+                    background-color: #96969669;
                     transform: translate(20px, -25px);
                     .tag-novo{
                         background-color: red;
                         color: $white-color;
                         border-radius: 10px;
-                        width: 40px;
+                        width: fit-content;
+                        padding: 2px;
                         font-size: .7em;
                         text-transform: uppercase;
                         text-align: center;
@@ -124,6 +126,8 @@ header{
 
             .news{
                 display: flex;
+                width: fit-content;
+
                 img{
                     max-width: 280px;
                     width: 250px;
@@ -133,13 +137,15 @@ header{
                 .typo{
                     h3{
                         color: $secundary-color;
-                        max-width: 400px;
+                        max-width: 350px;
+                        text-align: justify;
                     }
                     .description{
                         font-size: .8em;
-                        max-width: 400px;
+                        max-width: 350px;
                         margin-top: -.5em;
                         margin-bottom: 2em;
+                        text-align: justify;
                     }
 
                     p{

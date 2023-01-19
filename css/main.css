@@ -74,13 +74,17 @@ header .sub-header {
 .hero .container-news .main .image .typo {
   position: absolute;
   bottom: 0;
+  background-color: rgba(150, 150, 150, 0.4117647059);
   transform: translate(20px, -25px);
 }
 .hero .container-news .main .image .typo .tag-novo {
   background-color: red;
   color: #FFF;
   border-radius: 10px;
-  width: 40px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 2px;
   font-size: 0.7em;
   text-transform: uppercase;
   text-align: center;
@@ -107,6 +111,9 @@ header .sub-header {
 }
 .hero .container-news .see-more .news {
   display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .hero .container-news .see-more .news img {
   max-width: 280px;
@@ -116,13 +123,15 @@ header .sub-header {
 }
 .hero .container-news .see-more .news .typo h3 {
   color: #0E2664;
-  max-width: 400px;
+  max-width: 350px;
+  text-align: justify;
 }
 .hero .container-news .see-more .news .typo .description {
   font-size: 0.8em;
-  max-width: 400px;
+  max-width: 350px;
   margin-top: -0.5em;
   margin-bottom: 2em;
+  text-align: justify;
 }
 .hero .container-news .see-more .news .typo p {
   font-size: 0.6em;
