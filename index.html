@@ -1,33 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Newestnews | HOME</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <img src="assets/logo.svg" alt="logo">
-        <div class="sub-header">
-            <p>newestnews.com</p>
-            <p>magazine</p>
-        </div>
     </header>
+    <div class="sub-header">
+        <p>newestnews.com | magazine</p>
+    </div>
     <section class="hero">
         <div class="filter">
             <p>Filtrar por:</p>
             <div class="container">
-                <div class="category active">Todos</div>
-                <div class="category">Categoria</div>
-                <div class="category">Categoria</div>
-                <div class="category">Categoria</div>
-                <div class="category">Categoria</div>
-                <div class="category">Categoria</div>
-                <div class="category">Categoria</div>
-                <div class="category">Categoria</div>
-                <div class="category">Categoria</div>
-                <div class="category">Categoria</div>
+                <button class="category active" name="all">All</button>
+                <button class="category" name="national">National //Indian News only</button>
+                <button class="category" name="business">business</button>
+                <button class="category" name="sports">sports</button>
+                <button class="category" name="world">world</button>
+                <button class="category" name="politics">politics</button>
+                <button class="category" name="technology">technology</button>
+                <button class="category" name="startup">startup</button>
+                <button class="category" name="entertainment">entertainment</button>
+                <button class="category" name="miscellaneous">miscellaneous</button>
+                <button class="category" name="hatke">hatke</button>
+                <button class="category" name="science">science</button>
+                <button class="category" name="automobile">automobile</button>
             </div>
         </div>
 
@@ -50,9 +57,19 @@
                     <img src="assets/Rectangle 2.png">
                     <div class="typo">
                         <h3 id="nome-noticia">Justin Bieber faz show em BH</h3>
-                        <p>Lorem ipsum is placeholder text commonly used in the graphic</p>
+                        <p class="description">Lorem ipsum is placeholder text commonly used in the graphic</p>
                         <p>Publicado por <span id="nome-autor">Alberto Luiz</span></p>
-                        <p>Há 5 horas</p>
+                        <p class="time">Há 5 horas</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="news">
+                    <img src="assets/Rectangle 2.png">
+                    <div class="typo">
+                        <h3 id="nome-noticia">Justin Bieber faz show em BH</h3>
+                        <p class="description">Lorem ipsum is placeholder text commonly used in the graphic</p>
+                        <p>Publicado por <span id="nome-autor">Alberto Luiz</span></p>
+                        <p class="time">Há 5 horas</p>
                     </div>
                 </div>
             </div>
