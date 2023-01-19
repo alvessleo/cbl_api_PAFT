@@ -144,6 +144,16 @@ header{
 
                     p{
                         font-size: .6em;
+
+                        .read-more{
+                            font-weight: 700;
+                            color: #696969;
+                            text-decoration: none;
+
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                        }
                     }
 
                     .time{

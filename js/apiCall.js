@@ -14,7 +14,7 @@ function callNoticias(categoria){
                     <img src="${noticia.imageUrl}">
                     <div class="typo">
                         <h3 id="nome-noticia">${noticia.title}</h3>
-                        <p  class="description" maxlength="80">${noticia.content}<span>...</span></p>
+                        <p  class="description" maxlength="80">${noticia.content}<span>... <a href="#" class="read-more">Read more</a></span></p>
                         <p>Published by <span id="nome-autor">${noticia.author}</span></p>
                         <p class="time">${noticia.date} ${noticia.time}</p>
                     </div>

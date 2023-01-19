@@ -127,6 +127,14 @@ header .sub-header {
 .hero .container-news .see-more .news .typo p {
   font-size: 0.6em;
 }
+.hero .container-news .see-more .news .typo p .read-more {
+  font-weight: 700;
+  color: #696969;
+  text-decoration: none;
+}
+.hero .container-news .see-more .news .typo p .read-more:hover {
+  text-decoration: underline;
+}
 .hero .container-news .see-more .news .typo .time {
   color: #969696;
 }/*# sourceMappingURL=main.css.map */
