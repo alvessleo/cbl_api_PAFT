@@ -18,11 +18,16 @@ header{
         margin: auto;
         padding: 1.5em 0;
     }
+}
 
-    .sub-header{
-        background-color: $grey-color;
-        display: flex;
-        flex-direction: row;
+.sub-header{
+    background-color: $grey-color;
+    display: flex;
+    flex-direction: row;
+    padding-left: 1em;
+    
+    p{
+        padding: 5px 0;
     }
 }
 
