@@ -1,13 +1,15 @@
 const categoria = document.querySelectorAll(".category");
 
 function callNoticias(categoria){
+    let principal = document.querySelector(".main .image");
+    let noticias = document.querySelector(".see-more");
+    loading(principal, noticias);
+
+    noticias.innerHTML = "<h3>Veja mais</h3>";
+
     const xhttp = new XMLHttpRequest();
     xhttp.onload = function (){
-        let principal = document.querySelector(".main .image");
-        let noticias = document.querySelector(".see-more");
         let resposta = JSON.parse(this.response);
-
-        noticias.innerHTML = "<h3>Veja mais</h3>";
 
         resposta.data.forEach((element, index) => {
         let noticia = element;
@@ -39,6 +41,11 @@ function callNoticias(categoria){
     }
     xhttp.open("GET", `https://inshorts.deta.dev/news?category=${categoria}`);
     xhttp.send();
+}
+
+function loading(principal, noticias){
+    principal.innerHTML = `<div class="principal-loader"></div>`;
+    noticias.innerHTML = `<div class="noticias-loader"></div>`;
 }
 
 
