@@ -22,6 +22,7 @@ header img {
 }
 .sub-header p {
   padding: 5px 0;
+  cursor: pointer;
 }
 
 .hero {
@@ -32,7 +33,7 @@ header img {
   align-items: center;
 }
 .hero .filter {
-  margin-top: 2em;
+  margin-top: 1em;
   margin-bottom: 2em;
 }
 .hero .filter p {
