@@ -9,13 +9,14 @@ function callNoticias(categoria){
         resposta.data.forEach(element => {
         let noticia = element;
         noticias.innerHTML += `
+                <hr>
                 <div class="news">
                     <img src="${noticia.imageUrl}">
                     <div class="typo">
                         <h3 id="nome-noticia">${noticia.title}</h3>
-                        <p maxlength="80">${noticia.content}<span>...</span></p>
+                        <p  class="description" maxlength="80">${noticia.content}<span>...</span></p>
                         <p>Published by <span id="nome-autor">${noticia.author}</span></p>
-                        <p>${noticia.date} ${noticia.time}</p>
+                        <p class="time">${noticia.date} ${noticia.time}</p>
                     </div>
                 </div>
         `;

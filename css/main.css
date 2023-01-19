@@ -43,6 +43,9 @@ header .sub-header {
   border-radius: 10px;
   margin-right: 10px;
   margin-bottom: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
 }
 .hero .filter .container .category:hover {
   font-weight: 500;
@@ -109,14 +112,15 @@ header .sub-header {
   max-width: 280px;
   width: 250px;
   margin-right: 1em;
+  max-height: 150px;
 }
 .hero .container-news .see-more .news .typo h3 {
   color: #0E2664;
-  max-width: 200px;
+  max-width: 400px;
 }
 .hero .container-news .see-more .news .typo .description {
   font-size: 0.8em;
-  max-width: 200px;
+  max-width: 400px;
   margin-top: -0.5em;
   margin-bottom: 2em;
 }

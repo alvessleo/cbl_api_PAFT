@@ -49,6 +49,9 @@ header{
                 border-radius: 10px;
                 margin-right: 10px;
                 margin-bottom: 10px;
+                outline: none;
+                border: none;
+                cursor: pointer;
 
                 &:hover{
                     font-weight: 500;
@@ -125,15 +128,16 @@ header{
                     max-width: 280px;
                     width: 250px;
                     margin-right: 1em;
+                    max-height: 150px;
                 }
                 .typo{
                     h3{
                         color: $secundary-color;
-                        max-width: 200px;
+                        max-width: 400px;
                     }
                     .description{
                         font-size: .8em;
-                        max-width: 200px;
+                        max-width: 400px;
                         margin-top: -.5em;
                         margin-bottom: 2em;
                     }
