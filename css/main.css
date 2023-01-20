@@ -57,12 +57,7 @@ header img {
   border: none;
   cursor: pointer;
 }
-.hero .filter .container .category:hover {
-  font-weight: 500;
-  color: #FFF;
-  background: linear-gradient(95.42deg, #000B27 -7.57%, #0E2664 111.36%);
-}
-.hero .filter .container .active {
+.hero .filter .container .category:focus, .hero .filter .container .category:hover {
   font-weight: 500;
   color: #FFF;
   background: linear-gradient(95.42deg, #000B27 -7.57%, #0E2664 111.36%);
@@ -73,6 +68,9 @@ header img {
 .hero .container-news .main h1 {
   font-size: 1.9em;
   margin-bottom: 0.6em;
+}
+.hero .container-news .main .principal-loader img {
+  transform: scale(0.5);
 }
 .hero .container-news .main .image {
   position: relative;

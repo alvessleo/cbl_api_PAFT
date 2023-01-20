@@ -63,17 +63,11 @@ header{
                 border: none;
                 cursor: pointer;
 
-                &:hover{
+                &:focus, &:hover{
                     font-weight: 500;
                     color: $white-color;
                     background: linear-gradient(95.42deg, #000B27 -7.57%, #0E2664 111.36%);
                 }
-            }
-
-            .active{
-                font-weight: 500;
-                color: $white-color;
-                background: linear-gradient(95.42deg, #000B27 -7.57%, #0E2664 111.36%);
             }
         }
     }
@@ -84,6 +78,13 @@ header{
             h1{
                 font-size: 1.9em;
                 margin-bottom: .6em;
+            }
+
+            .principal-loader{
+
+                img{
+                    transform: scale(0.5);
+                }
             }
 
             .image{

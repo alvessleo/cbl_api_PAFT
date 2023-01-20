@@ -15,6 +15,7 @@ function callNoticias(categoria){
         let noticia = element;
         if (index == 0){
             principal.innerHTML = `
+            <a href="${noticia.url}"  target="_blank">
                 <div class="image">
                     <img src="${noticia.imageUrl}" alt="imagem">
                     <div class="typo">
@@ -23,6 +24,7 @@ function callNoticias(categoria){
                         <p>Published by <span id="nome-autor">${noticia.author}</span></p>
                     </div>
                 </div>
+            </a>
             `;
         } else{
             noticias.innerHTML += `
@@ -30,7 +32,7 @@ function callNoticias(categoria){
                 <img src="${noticia.imageUrl}">
                 <div class="typo">
                     <h3 id="nome-noticia">${noticia.title}</h3>
-                    <p  class="description" maxlength="80">${noticia.content}<span>... <a href="#" class="read-more">Read more</a></span></p>
+                    <p  class="description">${noticia.content}<span>... <a href="${noticia.url}" class="read-more"  target="_blank">Read more</a></span></p>
                     <p>Published by <span id="nome-autor">${noticia.author}</span></p>
                     <p class="time">${noticia.date} ${noticia.time}</p>
                 </div>
@@ -44,8 +46,10 @@ function callNoticias(categoria){
 }
 
 function loading(principal, noticias){
-    principal.innerHTML = `<div class="principal-loader"></div>`;
-    noticias.innerHTML = `<div class="noticias-loader"></div>`;
+    principal.innerHTML = `<div class="principal-loader">
+    <img src="assets/Magnify-1.2s-201px.gif"></img>
+    </div>`;
+    noticias.innerHTML += `<div class="noticias-loader"></div>`;
 }
 
 
