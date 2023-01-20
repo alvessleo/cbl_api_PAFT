@@ -5,7 +5,7 @@ function callNoticias(categoria){
     let noticias = document.querySelector(".see-more");
     loading(principal, noticias);
 
-    noticias.innerHTML = "<h3>Veja mais</h3>";
+    noticias.innerHTML = "<h3></h3>";
 
     const xhttp = new XMLHttpRequest();
     xhttp.onload = function (){
